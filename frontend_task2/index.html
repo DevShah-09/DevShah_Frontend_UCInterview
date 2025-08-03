@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guessing Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="app.js"></script>
+
+</head>
+
+<body class="bg-gray-900 flex justify-center items-center min-h-screen">
+
+  <div class="bg-emerald-400 font-bold p-12 rounded-3xl space-y-5 text-center" style="box-shadow: 0 0 10px rgb(255, 255, 255);">
+
+  <h1 class="text-8xl text-rose-800 pb-16 font-serif">Guess a Number</h1>
+  <p class="text-5xl text-slate-800">7 tries. 1 number. Can you crack the code?</p>
+
+  <div id="hearts" class="animate-pulse text-red-500 text-4xl">❤️❤️❤️❤️❤️❤️❤️</div>
+
+  <input type="text" id="input" placeholder="Make your move!"  class=" w-96 h-12 px-4 py-2 mr-2 border-2 rounded-xl border-blue-600 focus:outline-none">
+  <button id="guess" class="px-4 py-2 rounded-xl bg-purple-500 text-fuchsia-100 hover:bg-purple-800 transition">Guess Now!</button>
+
+  <div id="hint" class="text-xl text-gray-700 min-h-[24px]"></div>
+  <div class="text-left">
+    <h2 class="text-2xl text-gray-700">Previous Guesses </h2>
+    <div id="display_guesses" class="text-xl text-white mt-1"></div>
+  </div>
+
+  <button id="reset" class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-600 transition">Play again</button>
+
+  </div>
+
+</body>
+</html>
